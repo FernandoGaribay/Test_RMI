@@ -42,7 +42,7 @@ public class MiClaseRemota extends UnicastRemoteObject implements MiInterfazRemo
             // Ip del servidor remoto
             java.rmi.Naming.rebind("//"
                     + "192.168.1.87"
-                    + ":" + "1234" + "/PruebaRMI", mir); // args[0] = , args[1]
+                    + ":" + "1234" + "/PruebaRMI", mir); // args[0] = 192.168.1.87, args[1] = 1234
         } catch (Exception e) {
             System.out.println(e);
         }
